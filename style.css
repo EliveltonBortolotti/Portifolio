@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+ width: 60%;
+
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+li:hover {
+    color: #d21617;
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+#banner  {
+    
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/846a9086-8a40-43e0-aa10-2fc7d6d73730/de3mn3j-ae2a13b0-8d86-45c5-8d23-530b81235a5e.png/v1/fill/w_900,h_431/the_batman__2022__logo_png__by_mintmovi3_de3mn3j-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDMxIiwicGF0aCI6IlwvZlwvODQ2YTkwODYtOGE0MC00M2UwLWFhMTAtMmZjN2Q2ZDczNzMwXC9kZTNtbjNqLWFlMmExM2IwLThkODYtNDVjNS04ZDIzLTUzMGI4MTIzNWE1ZS5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.QkiAfoqdBwfNqabUzCHyh1571ekyUZO0GS_Cm2hp9gw');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+   height: 600px;
+   /** background-color: #d21617;
+   aqui é link da imagem https://preview.redd.it/6092ltrt8nt71.jpg?width=1080&crop=smart&auto=webp&s=7972389785988218c84437b9249615b1df8dc403**/
+}
+
+#trailer-container {
+    width: 100%;
+    height: px;
+    display: flex;
+    justify-content: center;
+}
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: nome;
+    margin-top: 25px;
+    }
+
+    .button:hover {
+        background-color: #fff;
+        color: #000;
+
+    }
+    .actor-cards-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .cards-content {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 40px;
+    
+    }
+
+    .card {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 20px 10px;
+        color:#fff;
+        font-size: 17px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+    .banner-1 {
+        background-image: url('https://s2-techtudo.glbimg.com/QMEFf3Zls-_v6MrH-uSQhV9bETM=/0x0:1500x1000/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/5/2/JhbDZXSN67wjcAqFLALQ/robert-pattinson-811119484f574723885b5bfbb109f749.jpg')
+    }
+    
+    .banner-2 {
+        background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/02/Zoe-CNN-Batman.png')
+    }
+
+    .banner-3 {
+        background-image: url('https://t.ctcdn.com.br/zrThhJ8U8hbVGyTRtCLIhTM0S00=/768x432/smart/i360687.jpeg');
+    
+    }
+
+    footer {
+        height: 300px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    span {
+        color: #fff;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    .footer-navigation {
+        display: none;
+    }
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media(max-width: 768px){
+        .footer-navigation { display: block;
+        }
+        
+        nav {
+            display: none;
+        }
+
+        .mobile-navigation {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: black;
+        color: white;
+        width: 60%;
+        height: 100%;
+        z-index: 1000;
+    }
+    }
+    #banner {
+        background-position: 40%;
+        height: 300px;
+    }
+    #trailer-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .content {
+        width: 95%;
+        flex-direction: column;
+    }
+    .trailer {
+        width: 100%;
+    }
+    #sinopse {
+        Width:100%;
+        display: flex;
+        margin: 20px 0;
+        text-align: center;
+        
+    }
+    
+    /**aqui vou estilizar oa página de comentários**/
+
+    #comentarios-header-1 {
+       width: 100%;
+       height: 70px;
+        background-color: #d21617;
+    }
+
+    #titulo-img-batman-h2 {
+        width: 50%;
+        margin: auto;
+        text-align: left;
+        color: #fff;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+
+    #imagem-batman {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .comentario-da-img-batman {
+        width: 50%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+    #titulo-img-mulher-gato {
+        width: 50%;
+        background-size: cover;
+        margin: auto;
+        text-align: left;
+        color: #fff;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    .comentario-da-img-mulher-gato {
+        width: 50%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    #nav-contato {
+         height: 300px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+
+    }
+
+    /**Estilo da página de fotos **/
+    
+    .head-fotos {
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+    display: none;
+
+}
+.header-fotos {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.body-fotos {
+    text-align: center;
+    font-size:20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #d21617;
+    cursor: pointer;
+    transition: 3s;
+    background-image:url(https://i.pinimg.com/736x/9a/57/e4/9a57e49c4bfcefa54c2744c78055be1c.jpg);
+}
+.body-fotos:hover {
+    color: gray;
+}
+
+.cotainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.fotos {
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.foto1 {
+    width: 90%;
+    height: 400px;
+    background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/a2/b3/60/a2b3601c58e1d9b288324612df2d1289.jpg);
+}
+.foto2 {
+     width: 50%;
+    height: 100%;
+    background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/48/00/ec/4800ecadda78ba22ab15b3c1aea97c41.jpg)
+}.foto3 {
+     width: 90%;
+    height: 100%;
+    background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/e4/2f/d1/e42fd1edbbf4a6cdac999ad8ed7a5d83.jpg)
+}
+.foto4 {
+     width: 90%;
+    height: 100%;
+    background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/5b/24/bd/5b24bd6dd4c093ec5f976b0bbd6e42f7.jpg)
+}
+
+.foto5 {
+     width: 90%;
+    height: 408px;
+    background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/20/52/0b/20520b742ebe20aba1f1ecd462ea75ce.jpg)
+}
+.foto6 {
+    width: 90%;
+   height: 480px;
+background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;    
+   background-image: url(https://i.pinimg.com/736x/cd/f1/5c/cdf15c177702aa9a403dc71d65157343.jpg)
+}
+.foto7 {
+     width: 90%;
+    height: 480px;
+    background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/cf/e9/3c/cfe93c61ea152af0825d6698bbe2924d.jpg)
+}
+.foto8 {
+     width: 90%;
+    height: 480px;
+    background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/23/81/69/238169ce78bb9377d8c654d50c43e4de.jpg)
+}.foto9 {
+     width: 90%;
+    height: 100%;
+     background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/be/c8/55/bec85555d9bc1ce9eef24058bacad524.jpg)
+}
+
+.foto10 {
+     width: 90%;
+    height: 100%;
+     background-size: cover;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    background-image: url(https://i.pinimg.com/736x/0c/17/61/0c1761bfb2ae7f256c84967b4450868c.jpg)
+}
+   
+
+  /* Estilo para a página de contato */
+.contact-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d21617;
+}
+
+.contact-container p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d21617;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #d21617;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #ccc;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
