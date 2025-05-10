@@ -36,6 +36,11 @@ li:hover {
 #logo {
     width: 150px;
     height: auto;
+    cursor: pointer;
+}
+#logo:hover {
+    transform: scale(1.5);
+
 }
 #banner  {
     
@@ -50,9 +55,10 @@ li:hover {
 
 #trailer-container {
     width: 100%;
-    height: px;
+    height: 800px;
     display: flex;
     justify-content: center;
+
 }
 .content {
     width: 60%;
@@ -79,6 +85,8 @@ li:hover {
     font-size: 17px;
     font-family: "Kdam Thmor Pro", sans-serif;
     width: 70%;
+    margin: auto;
+    text-align: center;
 }
 
 .button {
@@ -96,7 +104,7 @@ li:hover {
     font-weight: bold;
     border: none;
     outline: nome;
-    margin-top: 25px;
+    margin-top: 25px 0 25px 0;
     }
 
     .button:hover {
@@ -165,8 +173,13 @@ li:hover {
     span {
         color: #fff;
         font-family: 'Kdam Thmor Pro', sans-serif;
+        cursor: pointer;
     }
-    .footer-navigation {
+
+    span:hover {
+        color: #d21617;
+    }
+    .mobile-navigation {
         display: none;
     }
     .footer-list {
@@ -232,15 +245,22 @@ li:hover {
     #titulo-img-batman-h2 {
         width: 50%;
         margin: auto;
-        text-align: left;
+        text-align: center;
         color: #fff;
         font-family: 'Kdam Thmor Pro', sans-serif;
+        cursor: pointer;
+    }
+
+    #titulo-img-batman-h2:hover {
+        color:#d21617
     }
 
     #imagem-batman {
-        width: 100%;
+        width: 80%;
+        height: 50%;
+        padding: 30px 0 30px 0;
         display: flex;
-        justify-content: center;
+        margin: auto;
     }
     .comentario-da-img-batman {
         width: 50%;
@@ -255,10 +275,25 @@ li:hover {
         width: 50%;
         background-size: cover;
         margin: auto;
-        text-align: left;
+        text-align: center;
         color: #fff;
         font-family: 'Kdam Thmor Pro', sans-serif;
+        cursor: pointer;
     }
+
+    #titulo-img-mulher-gato:hover {
+        color:#d21617
+    }
+
+    #imagem-mulher-gato {
+        width: 80%;
+        height: 50%;
+        padding: 30px 0 30px 0;
+        display: flex;
+        margin: auto;
+    }
+
+
     .comentario-da-img-mulher-gato {
         width: 50%;
         background-size: cover;
@@ -267,6 +302,7 @@ li:hover {
         color: #fff;
         font-family: 'Kdam Thmor Pro', sans-serif;
     }
+
     #nav-contato {
          height: 300px;
         margin-top: 50px;
