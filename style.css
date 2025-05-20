@@ -187,7 +187,6 @@ li:hover {
         flex-direction: column;
         align-items: center;
     }
-
     @media(max-width: 768px){
         .footer-navigation { display: block;
         }
@@ -547,3 +546,4 @@ footer {
     color: #ccc;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
+

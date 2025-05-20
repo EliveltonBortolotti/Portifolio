@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Efeito Matrix</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+
+  <script>
+    const canvas = document.getElementById("matrixCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Define o tamanho do canvas
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Caracteres que serão exibidos na "chuva"
+    const letters = "アァイィウヴエカガキクグケサザシスセソタチツナニヌネノハバパヒビピフブプヘホマミムメモヤユヨラリルレロワン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const matrix = letters.split("");
+
+    const fontSize = 16;
+    const columns = canvas.width / fontSize;
+
+    // Array que armazena a posição vertical de cada coluna
+    const drops = Array(Math.floor(columns)).fill(1);
+
+    function drawMatrix() {
+      // Cor de fundo com opacidade para criar o rastro
+      ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Cor do texto
+      ctx.fillStyle = "#0F0";
+      ctx.font = `${fontSize}px monospace`;
+
+      for (let i = 0; i < drops.length; i++) {
+        const text = matrix[Math.floor(Math.random() * matrix.length)];
+        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+        // Reinicia a "gota" aleatoriamente para criar o efeito de loop
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+
+        drops[i]++;
+      }
+    }
+
+    setInterval(drawMatrix, 33); // Atualiza a tela a cada ~30fps
+  </script>
+</body>
+</html>
