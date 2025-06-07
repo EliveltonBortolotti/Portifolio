@@ -1,43 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elivelton | Portifólio</title>
-    <link rel="stylesheet" href="css/css/style.css">
+    <title>Elivelton Bortolotti | Portfólio de Desenvolvedor Web</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
-<body>
-    <header>
-        <h1>Elivelton</h1>
-        <p>Desenvolvedor Web | Full Stack</p> 
-        <nav>
-            <a href="#about">Sobre Min</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact">Contato</a>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>Sobre Min</h2>
-        <p>Atualmente estou trabalhando em um projeto com base em html, java script e css. </p>
-    </section>
+<body id="home">
 
-    <section id="projects">
-        <h2>Projetos</h2>
-        <div class="projects">
-            <h3>Portifólio</h3>
-            <p> Aqui estou começando a produzir meu portifólio. Utilizando html,css e java scrpit.</p>
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <div class="main-header-left">
+                    <a href="/">
+                        <img class="logo-img" src="./img/Develt Logo.jpg" alt="Logo Develt">
+                    </a>
+                </div>
+                <nav class="main-header-right">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="st-smooth-move active">Home</a></li>
+                        <li><a href="#about" class="st-smooth-move">About</a></li>
+                        <li><a href="#resume" class="st-smooth-move">Resume</a></li>
+                        <li><a href="#portfolio" class="st-smooth-move">Portfólio</a></li>
+                        <li><a href="#blog" class="st-smooth-move">Blog</a></li>
+                        <li><a href="#contact" class="st-smooth-move">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="phone">
+                    <svg viewBox="0 0 513.64 513.64" aria-hidden="true">
+                        <path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"/>
+                    </svg>
+                    <span class="phone-no">+55 (51) 99896-3633</span>
+                </div>
+            </div>
         </div>
-    </section>
-    <section id="contact">
-        <h2>Contato</h2>
-        <p>
-             <ul> 
-      <li>Facebook <a href="https://www.facebook.com/">Clique aqui</a> </l>
-      <li>Instagram <a href="https://www.instagram.com/">Clique aqui</a> </li>
-      <li>X <a href="https://x.com/">Clique aqui</a> </li>
-      <li>Whatsapp <a href="https://web.whatsapp.com/">Clique aqui</a></li>
-    </ul>
-        </p>
-    </section>
+    </header>
+    
+    <section class="presents-container">
+    <div class="presents-container-content">
+      <div class="presents-container-text">
+        <h1>Olá, EU sou <span>Elivelton</span></h1>
+        <p>Sou um desenvolvedor web front-end. Posso fornecer código limpo e design pixel-perfect. <br>Também torno o site mais interativo com animações web.</p>
+        <div class="social-links">
+          <a class="social-btn" href="#" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="social-btn" href="#" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="social-btn" href="#" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5" class="st-hero-shape">
+      <polygon points="-30,300 355.167,210.5 1432.5,290 1920,198.5 1920,300"></polygon>
+    </svg>
+  </section>
+    
+    <main>
+        <section id="about" aria-label="Sobre Mim">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis.</p>
+        </section>
+
+        <section id="portfolio" aria-label="Projetos">
+            <h2>Projetos</h2>
+            <ul>
+                <li>Projeto 1: Descrição do projeto 1.</li>
+                <li>Projeto 2: Descrição do projeto 2.</li>
+                <li>Projeto 3: Descrição do projeto 3.</li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-label="Contato">
+            <h2>Contato</h2>
+            <p>Email: elivelton.12@gmail.com - <a href="mailto:elivelton.12@gmail.com">Enviar Email</a></p>
+            <p>WhatsApp: <a href="https://wa.me/5551998963633" target="_blank" rel="noopener noreferrer">(51) 99896-3633</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/elivelton-bortolotti-305455249" target="_blank" rel="noopener noreferrer">Elivelton Bortolotti</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Elivelton Bortolotti - Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
